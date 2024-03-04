@@ -62,7 +62,7 @@ def create_bystate_city_df(df):
 
 
 
-all_df = pd.read_csv("https://github.com/Azzoekroef/data-analyst-dicoding/blob/master/dashboard/main_data.csv")
+all_df = pd.read_csv("https://raw.githubusercontent.com/Azzoekroef/data-analyst-dicoding/master/dashboard/main_data.csv")
 datetime_columns = ["order_purchase_timestamp", "order_delivered_customer_date", "order_approved_at", "order_delivered_carrier_date", "order_estimated_delivery_date", "shipping_limit_date"]
 all_df.sort_values(by="order_purchase_timestamp", inplace=True)
 all_df.reset_index(inplace=True)
